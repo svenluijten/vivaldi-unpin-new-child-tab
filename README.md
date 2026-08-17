@@ -27,15 +27,17 @@ There is a brief window of about a single frame where the tab exists as pinned b
 
 The extension is not on the Chrome Web Store, so it is loaded unpacked.
 
-1. Clone or download this repository to a permanent location. Vivaldi loads unpacked extensions from disk on every startup, so if you delete or move the folder the extension will disappear.
+1. Download the latest `unpin-new-child-tab-*.zip` from the [releases page](https://github.com/svenluijten/vivaldi-unpin-new-child-tab/releases/latest) and extract it to a permanent location. Vivaldi loads unpacked extensions from disk on every startup, so if you delete or move the folder the extension will disappear.
 
-```sh
-git clone https://github.com/svenluijten/vivaldi-unpin-new-child-tab.git ~/.local/share/vivaldi-extensions/unpin-new-child-tab
-```
+   Alternatively, clone the repository:
+
+   ```sh
+   git clone https://github.com/svenluijten/vivaldi-unpin-new-child-tab.git ~/.local/share/vivaldi-extensions/unpin-new-child-tab
+   ```
 
 2. Open `vivaldi://extensions` in Vivaldi.
 3. Enable **Developer mode** using the toggle in the top-right corner.
-4. Click **Load unpacked** and select the repository folder containing `manifest.json`.
+4. Click **Load unpacked** and select the folder containing `manifest.json`.
 5. Confirm that **Unpin New Child Tab** appears in the list and is enabled.
 
 No restart is required. Open a pinned tab, middle-click a link in it, and the new tab should land unpinned at the end of the strip.
